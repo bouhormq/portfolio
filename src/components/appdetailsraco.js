@@ -11,7 +11,7 @@ export default function AppDetails(){
                     <h2 className = {AppDetailsStyles.h2}>teaching, where teachers</h2>
                     <h2 className = {AppDetailsStyles.h2}>can share information</h2>
                     <h2 className = {AppDetailsStyles.h2}>with students about</h2>
-                    <h2 className = {AppDetailsStyles.h2}>classes, tasks and exams,</h2>
+                    <h2 className = {AppDetailsStyles.h2}>classes, tasks, and exams,</h2>
                     <h2 className = {AppDetailsStyles.h2}>all in one place</h2>
                 </div>
                 <div className = {AppDetailsStyles.row}>
