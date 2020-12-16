@@ -13,9 +13,9 @@
     height: auto;
     margin-left: 2%;
     display: inline-block;
-
+    min-width:350px;
     @media (max-width: 1158px) {
-        width:50%;
+        min-width:55%;
     }
 }
 

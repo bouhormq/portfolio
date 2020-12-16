@@ -1,45 +1,67 @@
 import React from 'react'
 import PhoneScreenStyles from "../styles/phonescreen.module.scss"
-import { useEffect, useState} from 'react';
+import { useEffect, useState, useRef} from 'react';
 import srcvideo1 from "../media/empty.png"
 import srcvideo2 from "../media/letstalk.gif"
 import srcvideo3 from "../media/video2.gif"
 
-function MyApp (source) {
-
-  const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    window.onscroll = () => {
-      setOffset(window.pageYOffset)
-    }
-  }, []);
-  
-  if(window.innerWidth > 991) {
-      if(offset > 700 && offset < 1421){
-          return srcvideo2;
-      }
-      else if(offset > 1221){
-          return srcvideo3;
-      }
-      else {
-          return srcvideo1;
-      }
-  }
-  else {
-      if(source === "corsa") {
-          return srcvideo2;
-      }
-      else if(source === "blind") {
-          return srcvideo3;
-      }
-  }
-
-
-};
-
 
 export default function PhoneScreen(props){
+
+    let change = true;
+    let state = 1;
+    const [offset, setOffset] = useState(0);
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        window.onscroll = () => {
+            setOffset(window.pageYOffset)
+        };
+
+        window.addEventListener("resize", () => {
+            setVideo(props.source);
+        });
+    }, []);
+
+    useEffect(() => {
+        setVideo(props.source);
+    },[]);
+
+    useEffect(() => {
+        changeVideo(props.source);
+  },[offset]);
+
+
+  const changeVideo = () => {
+    if(window.innerWidth > 1158) {
+        if(offset > 700 && offset < 1221){
+            console.log("big2");
+            videoRef.current.src = srcvideo2;
+        }
+        else if(offset > 1221){
+            console.log("big3");
+            videoRef.current.src = srcvideo3;
+        }
+        else {
+            console.log("big1");
+            videoRef.current.src = srcvideo1;
+        }
+    }
+  }
+  
+
+    const setVideo = (source) => {
+            if(source === "corsa") {
+              console.log("mamak1");
+                videoRef.current.src = srcvideo2;
+            }
+            if(source === "blind") {
+                console.log("mamak2");
+                videoRef.current.src = srcvideo3;
+            }
+    };
+
+
     return <div className = {PhoneScreenStyles.phone}>
             <img className = {PhoneScreenStyles.bumblebizz} src ={require('../media/bumblebizz.png')} alt = " "></img>
             <img className = {PhoneScreenStyles.mockphone} src ={require('../media/phone.png')} alt = " "></img>
@@ -66,6 +88,6 @@ export default function PhoneScreen(props){
                 <h4 className = {PhoneScreenStyles.duration}>2023 (expected)</h4>
               </div>
             </div>
-            <img className = {PhoneScreenStyles.appvideo} src = {MyApp(props.source)}  alt = " "></img>
+            <img className = {PhoneScreenStyles.appvideo} ref={videoRef} src =""  alt = ""/>
           </div>
 }
