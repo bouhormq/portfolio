@@ -1,0 +1,203 @@
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../styles/fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../styles/fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+.component{
+    z-index: 999;
+}
+
+.phone{
+    border-radius: 10px;
+    width: 300px;
+    height: 560px;
+    top:16%;
+    right: 203px;
+    margin-left: 880px;   
+    position: -webkit-sticky;
+    position: fixed;
+
+    @media (max-width: 1158px) {
+        margin: 0 auto 4rem;
+        position: static;
+    }
+}
+
+
+.phone:hover .arrow{
+    visibility: hidden;
+}
+
+.phone:hover .cv{
+    top:-250px;
+    @media (max-width: 1158px) {
+        top:-170px;
+}
+}
+
+.mockphone{
+    position: absolute;
+    margin-left: 11px;
+    width: 280px;
+    height: auto;
+    z-index: 9;
+}
+
+.bumblebizz{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    margin-left: 27px;
+    margin-top: 18px;
+}
+
+.profile{
+    position: absolute;
+    border-radius: 10px;
+    width: 227px;
+    height: 434px;
+    margin-top: 85px;
+    margin-left: 37px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.pictureprofile{
+    height: 434px;
+    width: auto;
+    position: relative;
+    right: 50px;
+    visibility: visible;
+}
+
+.cvbg{
+    border-radius: 10px;
+    width: 215px;
+    height: 421px;    
+    overflow: hidden;
+    z-index:1000;
+    margin-top: 85px;
+    margin-left: 43px;
+    @media (max-width: 1158px) {
+        position: relative;
+        bottom: -90px;
+        z-index: 0;
+    }
+}
+
+.cv{
+    border-radius: 10px;
+    margin-top: 260px;
+    width: 216px;
+    height: 500px;
+    top:0;
+    position:relative;
+    transition:top 0.5s ease-out;
+    -webkit-transition: top 0.5s ease-out;
+    -moz-transition: top 0.5s ease-out;
+    -o-transition: top 0.5s ease-out;
+    background-color: white;
+    z-index: 7;
+}
+
+
+
+.name{
+    display: inline-block;
+    font-family:'Proxima Nova Rg', Helvetica, sans-serif, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    line-height: 35px;
+    margin-top: 0;
+}
+
+.title{
+    font-family: 'Proxima Nova Rg', Geneva, sans-serif;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.company{
+    font-family: 'Proxima Nova Rg', Geneva, sans-serif;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: rgb(90, 90, 90);
+}
+
+.aboutme{
+    font-family: 'Proxima Nova Rg', Geneva, sans-serif;
+    font-size: 10px;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 5px;
+    line-height: 11.5px;
+}
+
+.type{
+    font-family: 'Proxima Nova Rg', Geneva, sans-serif;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color:orange;
+}
+
+.duration{
+    font-family: 'Proxima Nova Rg', Geneva, sans-serif;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: grey;
+}
+
+.location{
+    font-family: 'Proxima Nova Rg', Geneva, sans-serif;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+.arrow{
+    height: 18px;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+    visibility: visible;
+}
+
+
+
+.appvideo{
+    position: relative;
+    left: 8%;
+    bottom: 500px;
+    height: 540px;
+    border-radius: 20px;
+    width: auto;
+    z-index: 8;
+    @media (max-width: 1158px) {
+        bottom: 410px;
+    }
+}

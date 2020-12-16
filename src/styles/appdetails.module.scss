@@ -1,0 +1,171 @@
+
+@font-face {
+    font-family: 'Hanson';
+    src: url('../styles/fonts/HansonBold.woff2') format('woff2'),
+        url('../styles/fonts/HansonBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Horsham-Serial';
+    src: url('../styles/fonts/Horsham-Serial-Bold.woff2') format('woff2'),
+        url('../styles/fonts/Horsham-Serial-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+.h1{
+    font-family: 'Hanson';
+    transition: ease all .5s;
+    font-size: 130px;
+    line-height: 0px;
+    color: #20356B;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    @media (max-width: 1158px) {
+        font-size: 80px;
+        margin: 9rem 0 3rem;
+    }
+}
+
+.h1c{
+    font-family: 'Hanson';
+    transition: ease all .5s;
+    font-size: 130px;
+    line-height: 0px;
+    color: #20356B;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    @media (max-width: 1158px) {
+        font-size: 80px;
+        margin: 9rem 0 3rem;
+    }
+}
+
+.h2{
+    font-family: 'Hanson';
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px #20356B ;
+    line-height: 5px;
+    letter-spacing: 0.5;
+    margin-left: 10px;
+    position: relative;
+    bottom: 30px;
+    visibility: visible;
+    transition: ease all .5s;
+    @media (max-width: 1158px) {
+        font-size: 18px;
+        bottom: 0;
+        line-height: 1.2;
+        margin: 0 10px 5px
+    }
+}
+
+.text{
+    position: relative;
+    top:20px;
+    transition: ease all .5s;
+    @media (max-width: 1158px) {
+    top:0;
+}
+}
+
+.div{    
+    position: relative;
+    left: 17%;
+    width: 600px;
+    height:80vh;
+    margin: 0px;
+    transition: ease all .5s;
+    @media (max-width: 1370px) {
+        left: 5%;
+    }
+
+    @media (max-width: 1158px) {
+        left: 0;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        text-align: center;
+    }
+}
+
+.row{
+    position: relative;
+    bottom: 5px;
+    margin-left: 10px;
+    transition: ease all .5s;
+    @media (max-width: 1158px) {
+        bottom: 0;
+        height: 75px;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.github{
+    position: relative;
+    left: 240px;
+    bottom: 74px;
+    width: 75px;
+    height: 75px;
+    transition: ease all .5s;
+    @media (max-width: 1158px) {
+        position: static;
+        margin-left: 2rem;
+    }
+}
+.github:hover .githubnohover{
+    visibility: hidden;
+}
+
+.githubhover{
+    height: 70px;
+    width: auto;
+
+}
+
+.githubnohover{
+    height: 70px;
+    width: auto;
+    position: relative;
+    bottom: 74px;
+    visibility:visible;
+}
+
+.store{
+    width:180px;
+    height: 75px;
+}
+
+.store:hover .storenohover{
+    visibility: hidden;
+}
+
+.storenohover{
+    height: 70px;
+    width: auto;
+    position: relative;
+    bottom: 75px;
+    visibility: visible;
+    @media (max-width: 1158px) {
+        bottom:74px;
+    }
+}
+
+.storehover{
+    height: 70px;
+    width: auto;
+}
+
+
+
+

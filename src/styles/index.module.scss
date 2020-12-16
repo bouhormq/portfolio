@@ -1,0 +1,29 @@
+
+
+
+html::-webkit-scrollbar {
+        display: none;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+}
+
+html{
+    background-color: #cbe0f4;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+*{
+    cursor: none !important;
+}
+
+.div {
+    overflow: hidden;
+    position: relative;
+}
+
+
+

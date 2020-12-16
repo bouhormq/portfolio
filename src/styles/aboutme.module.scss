@@ -1,0 +1,25 @@
+
+.div{
+    margin-top: 15%;
+    position: relative;
+    height: 700px;
+    @media (max-width: 1158px) {
+        height: 0;
+    }
+}
+
+.hand, .fingers2 {
+    position: absolute;
+    right: -440px;
+    top: 0;
+    z-index: -1;
+    width: 1050px;
+    @media (max-width: 1158px) {
+        display: none;
+    }
+}
+
+.fingers2 {
+    z-index: 1;
+    pointer-events: none;
+}
