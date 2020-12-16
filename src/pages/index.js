@@ -42,7 +42,7 @@ class App extends Component{
               <meta property="og:url" content="https://www.bouhormq.com"/>
               <meta property="og:type" content="website"/>
               <meta property="og:title" content="Salim Bouhorma Mouffak"/>
-              <meta property="og:description" content="Hi there! Checkout some of my cool projects!"/>
+              <meta property="og:description" content="Hi there! Check out some of my cool projects!"/>
               <meta property="og:image" content="https://github.com/bouhormq/PORTFOLIO/blob/master/src/media/linkpreview.PNG"/>
 
               {/*<!-- Twitter Meta Tags -->*/}
