@@ -8,7 +8,6 @@ import Header from "../components/header"
 import IndexStyles from "../styles/index.module.scss"
 import { Blob } from "react-blob"
 import {RotateScale} from 'styled-loaders-react'
-import {Helmet} from "react-helmet";
 
 
 
@@ -31,29 +30,6 @@ class App extends Component{
   
   render(){
     return <div className ={IndexStyles.div}>
-            <Helmet>
-              {/*<!-- HTML Meta Tags -->*/}
-              <title>Salim Bouhorma Mouffak</title>
-              <meta name="description" content="Hi there! Checkout some of my cool projects!"/>
-
-              {/*<!-- Google / Search Engine Tags -->*/}
-              <meta itemprop="name" content="Salim Bouhorma Mouffak"/>
-              <meta itemprop="description" content="Hi there! Checkout some of my cool projects!"/>
-              <meta itemprop="image" content="https://github.com/bouhormq/PORTFOLIO/blob/master/src/media/linkpreview.PNG"/>
-
-              {/*<!-- Facebook Meta Tags -->*/}
-              <meta property="og:url" content="https://www.bouhormq.com"/>
-              <meta property="og:type" content="website"/>
-              <meta property="og:title" content="Salim Bouhorma Mouffak"/>
-              <meta property="og:description" content="Hi there! Checkout some of my cool projects!"/>
-              <meta property="og:image" content="https://github.com/bouhormq/PORTFOLIO/blob/master/src/media/linkpreview.PNG"/>
-
-              {/*<!-- Twitter Meta Tags -->*/}
-              <meta name="twitter:card" content="summary_large_image"/>
-              <meta name="twitter:title" content="Salim Bouhorma Mouffak"/>
-              <meta name="twitter:description" content="Hi there! Checkout some of my cool projects!"/>
-              <meta name="twitter:image" content="https://github.com/bouhormq/PORTFOLIO/blob/master/src/media/linkpreview.PNG"/>
-            </Helmet>
             {
               this.state.loading ? <RotateScale size = "400px" color="#20356B"/> :
                   <>
