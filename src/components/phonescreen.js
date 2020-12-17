@@ -35,15 +35,15 @@ export default function PhoneScreen(props){
   const changeVideo = () => {
     if(window.innerWidth > 1158) {
         if(offset > 700 && offset < 1221){
-            console.log("big2");
+            console.log(videoRef.current.src);
             videoRef.current.src = srcvideo2;
         }
         else if(offset > 1221){
-            console.log("big3");
+            console.log(videoRef.current.src);
             videoRef.current.src = srcvideo3;
         }
         else {
-            console.log("big1");
+            console.log(videoRef.current.src);
             videoRef.current.src = srcvideo1;
         }
     }
@@ -52,11 +52,9 @@ export default function PhoneScreen(props){
 
     const setVideo = (source) => {
             if(source === "corsa") {
-              console.log("mamak1");
                 videoRef.current.src = srcvideo2;
             }
             if(source === "blind") {
-                console.log("mamak2");
                 videoRef.current.src = srcvideo3;
             }
     };
