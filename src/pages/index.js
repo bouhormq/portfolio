@@ -6,7 +6,6 @@ import AppDetailsRaco from "../components/appdetailsraco"
 import Cursor from "../components/cursor"
 import Header from "../components/header"
 import IndexStyles from "../styles/index.module.scss"
-import Seo from "../components/seo"
 import { Blob } from "react-blob"
 import {RotateScale} from 'styled-loaders-react'
 import {Helmet} from "react-helmet";
@@ -27,7 +26,6 @@ class App extends Component{
     
   render(){
     return <div className ={IndexStyles.div}>
-            <Seo/>
             {
               this.state.loading ? <RotateScale size = "400px" color="#20356B"/> :
                   <>
