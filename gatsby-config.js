@@ -5,12 +5,6 @@
  */
 
 module.exports = {
-  siteMetadata: {
-    title: "Salim Bouhorma Mouffak",
-    description: "Hi there! Check out my cool projects!",
-    image: "./src/media/linkpreview.PNG",
-    url: "bouhormq.com",
-  },
   plugins: [
     'gatsby-plugin-sass'
   ],
