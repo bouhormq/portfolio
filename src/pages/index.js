@@ -8,7 +8,7 @@ import Header from "../components/header"
 import IndexStyles from "../styles/index.module.scss"
 import { Blob } from "react-blob"
 import {RotateScale} from 'styled-loaders-react'
-import {Helmet} from "react-helmet";
+import Helmet from "react-helmet";
 
 class App extends Component{
   
@@ -26,6 +26,15 @@ class App extends Component{
     
   render(){
     return <div className ={IndexStyles.div}>
+            <Helmet>
+            <meta name="description" content="Hi there! Check out some of my cool projects!"/>
+            <meta name="keywords" content="portfolio, projects, computer science, upc, salim bouhorma"/>  
+            <meta property="og:title" content="Salim Bouhorma Mouffak" />
+            <meta property="og:description" content="Hi there! Check out some of my cool projects!" />
+            <meta property="og:image" content="./preview.png" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://www.bouhormq.com/" />
+            </Helmet>
             {
               this.state.loading ? <RotateScale size = "400px" color="#20356B"/> :
                   <>
