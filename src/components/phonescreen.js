@@ -40,7 +40,7 @@ export default function PhoneScreen(props){
         }
         else if(offset > 1221){
             console.log(videoRef.current.src);
-            videoRef.current.src = srcvideo3;
+            videoRef.current.src = srcvideo2;
         }
         else {
             console.log(videoRef.current.src);
