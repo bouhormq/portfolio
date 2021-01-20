@@ -7,10 +7,8 @@ import srcvideo3 from "../media/video2.gif"
 
 
 export default function PhoneScreen(props){
-
-    let change = true;
-    let state = 1;
     const [offset, setOffset] = useState(0);
+    const [status, changeStatus] = useState(1);
     const videoRef = useRef(null);
 
     useEffect(() => {
@@ -24,39 +22,47 @@ export default function PhoneScreen(props){
     }, []);
 
     useEffect(() => {
-        setVideo(props.source);
-    },[]);
-
-    useEffect(() => {
-        changeVideo(props.source);
+        if(window.innerWidth > 1158) {
+            if(offset > 700 && offset < 1415){
+                changeStatus(2)
+            }
+            else if(offset > 1415){
+                changeStatus(3)
+            }
+            else if(offset < 700) {
+                changeStatus(1)
+            }
+        };
   },[offset]);
 
+  useEffect(() => {
+    changeVideo(props.source);
+},[status]);
 
   const changeVideo = () => {
     if(window.innerWidth > 1158) {
-        if(offset > 700 && offset < 1221){
-            console.log(videoRef.current.src);
+        if(status === 2){
             videoRef.current.src = srcvideo3;
         }
-        else if(offset > 1221){
-            console.log(videoRef.current.src);
-            videoRef.current.src = srcvideo3;
+        else if(status === 1){
+            videoRef.current.src = srcvideo1;
         }
         else {
-            console.log(videoRef.current.src);
-            videoRef.current.src = srcvideo1;
+            videoRef.current.src = srcvideo3;
         }
     }
   }
   
 
     const setVideo = (source) => {
+        if(window.innerWidth < 1158) {
             if(source === "corsa") {
                 videoRef.current.src = srcvideo3;
             }
             if(source === "blind") {
                 videoRef.current.src = srcvideo3;
             }
+        }
     };
 
 

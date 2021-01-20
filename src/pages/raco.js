@@ -18,6 +18,7 @@ class App extends Component{
   }
 
   componentDidMount = () => {
+    document.title = "Salim Bouhorma Mouffak"
     setTimeout(() => {
       this.setState({
         loading:false
