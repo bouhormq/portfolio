@@ -78,7 +78,7 @@ export default function PhoneScreen(props){
                 <img className = {PhoneScreenStyles.arrow} src ={require('../media/arrow.gif')} alt = " "></img>
                 <h2 className = {PhoneScreenStyles.title}>Computer Science Student</h2>
                 <h3 className = {PhoneScreenStyles.company}>Polytechnic University of Catalonia</h3>
-                <h6 className = {PhoneScreenStyles.aboutme}>I am a user-centered, software engineer based in Barcelona with a passion 
+                <h6 className = {PhoneScreenStyles.aboutme}>I am a user-centered, software engineer with a passion 
                 for building digital experiences that enhance one's life. Critical thinking is essential to my design process. 
                 My lifetime goal is to keep learning new things and to use that knowledge to help people through software.</h6>
                 <h5 className = {PhoneScreenStyles.type}>Experience</h5>
