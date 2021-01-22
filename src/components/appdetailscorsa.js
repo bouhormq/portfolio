@@ -20,6 +20,12 @@ export default function AppDetails(){
                         <img className = {AppDetailsStyles.storenohover} src ={require('../media/googleplaybutton.png')} alt = " "></img>
                     </div>
                     {/*</a>*/}
+                    {/*<a href = 'https://github.com/bouhormq' target='_blank' rel="noreferrer">*/}
+                    <div className = {AppDetailsStyles.store}>
+                        <img className = {AppDetailsStyles.storehover} src ={require('../media/appstorebuttonhover.png')} alt = " "></img>
+                        <img className = {AppDetailsStyles.storenohover} src ={require('../media/appstorebutton.png')} alt = " "></img>
+                    </div>
+                    {/*</a>*/}
                     <a href = 'https://github.com/bouhormq/CORSA' target='_blank' rel="noreferrer">
                     <div className = {AppDetailsStyles.github}>
                         <img className = {AppDetailsStyles.githubhover} src ={require('../media/githubbuttonhover.png')} alt = " "></img>

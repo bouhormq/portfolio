@@ -80,7 +80,7 @@
 .div{    
     position: relative;
     left: 17%;
-    width: 600px;
+    width: 650px;
     height:80vh;
     margin: 0px;
     transition: ease all .5s;
@@ -100,7 +100,6 @@
 .row{
     position: relative;
     bottom: 5px;
-    margin-left: 10px;
     transition: ease all .5s;
     @media (max-width: 1158px) {
         bottom: 0;
@@ -112,9 +111,9 @@
 }
 
 .github{
+    display: inline-block;
     position: relative;
-    left: 240px;
-    bottom: 74px;
+    left: 10px;
     width: 75px;
     height: 75px;
     transition: ease all .5s;
@@ -122,14 +121,28 @@
         position: static;
         margin-left: 2rem;
     }
+    @media (max-width: 485px) {
+        left: 3px;
+        margin-left: 1rem;
+    }
+    @media (max-width: 485px) {
+        width: 60px;
+        height: auto;
+    }
 }
 .github:hover .githubnohover{
     visibility: hidden;
+    display: inline-block;
 }
 
 .githubhover{
     height: 70px;
     width: auto;
+    display: inline-block;
+    @media (max-width: 485px) {
+        width: 60px;
+        height: auto;
+    }
 
 }
 
@@ -139,31 +152,58 @@
     position: relative;
     bottom: 74px;
     visibility:visible;
+    display: inline-block;
+    @media (max-width: 485px) {
+        width: 60px;
+        height: auto;
+        bottom: 59px;
+    }
+
 }
 
 .store{
     width:180px;
     height: 75px;
+    display: inline-block;
+    @media (max-width: 485px) {
+        margin: 0;
+        width: 130px;
+        height: 55px;
+    }
 }
 
 .store:hover .storenohover{
     visibility: hidden;
+    display: inline-block;
+    @media (max-width: 485px) {
+        width: 130px;
+        height: auto;
+    }
 }
 
 .storenohover{
+    display: inline-block;
     height: 70px;
     width: auto;
     position: relative;
     bottom: 74px;
     visibility: visible;
-    @media (max-width: 1158px) {
-        bottom:74px;
+    @media (max-width: 485px) {
+        width: 130px;
+        height: auto;
+        bottom: 55px;
     }
 }
 
 .storehover{
     height: 70px;
     width: auto;
+    display: inline-block;
+    @media (max-width: 485px) {
+        width: 130px;
+        height: auto;
+    }
+
 }
 
 
