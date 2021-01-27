@@ -14,12 +14,12 @@ export default function AppDetails(){
                     <h2 className = {AppDetailsStyles.h2}>problem</h2>
                 </div>
                 <div className = {AppDetailsStyles.row}>
-                    {/*<a href = 'https://github.com/bouhormq' target='_blank' rel="noreferrer">*/}
+                    <a href = 'https://play.google.com/store/apps/details?id=trufi.bouhormq.corsa' target='_blank' rel="noreferrer">
                     <div className = {AppDetailsStyles.store}>
                         <img className = {AppDetailsStyles.storehover} src ={require('../media/googleplaybuttonhover.png')} alt = " "></img>
                         <img className = {AppDetailsStyles.storenohover} src ={require('../media/googleplaybutton.png')} alt = " "></img>
                     </div>
-                    {/*</a>*/}
+                    </a>
                     {/*<a href = 'https://github.com/bouhormq' target='_blank' rel="noreferrer">*/}
                     <div className = {AppDetailsStyles.store}>
                         <img className = {AppDetailsStyles.storehover} src ={require('../media/appstorebuttonhover.png')} alt = " "></img>
