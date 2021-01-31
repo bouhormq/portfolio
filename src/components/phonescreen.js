@@ -2,7 +2,7 @@ import React from 'react'
 import PhoneScreenStyles from "../styles/phonescreen.module.scss"
 import { useEffect, useState, useRef} from 'react';
 import srcvideo1 from "../media/empty.png"
-import srcvideo2 from "../media/letstalk.gif"
+import srcvideo2 from "../media/screen.png"
 import srcvideo3 from "../media/video2.gif"
 
 
@@ -42,7 +42,7 @@ export default function PhoneScreen(props){
   const changeVideo = () => {
     if(window.innerWidth > 1158) {
         if(status === 2){
-            videoRef.current.src = srcvideo3;
+            videoRef.current.src = srcvideo2;
         }
         else if(status === 1){
             videoRef.current.src = srcvideo1;
@@ -57,7 +57,7 @@ export default function PhoneScreen(props){
     const setVideo = (source) => {
         if(window.innerWidth < 1158) {
             if(source === "corsa") {
-                videoRef.current.src = srcvideo3;
+                videoRef.current.src = srcvideo2;
             }
             if(source === "blind") {
                 videoRef.current.src = srcvideo3;
