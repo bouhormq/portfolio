@@ -5,8 +5,9 @@ import srcvideo from "../media/screen.png"
 
 export default function PhoneScreenCorsa(props){
     return <div className = {PhoneScreenStyles.phone}>
-            <img className = {PhoneScreenStyles.appvideo} src = {srcvideo}  alt = " "></img>
-          </div>
+                <img className = {PhoneScreenStyles.mockphone} src ={require('../media/phone.png')} alt = " "></img>
+                <img className = {PhoneScreenStyles.appvideo} src = {srcvideo}  alt = " "></img>         
+            </div>
 }
 
 
