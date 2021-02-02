@@ -1,8 +1,7 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, {useState, useEffect } from "react";
+import PhoneScreenStyles from "../styles/phonescreencorsa.module.scss"
 import mainVideo from "../media/corsa.mp4"
-import gifVideo from "../media/corsa.gif"
-
-
+import gifvideo from "../media/corsa.gif"
 
 const isSafari = () => {
   const ua = navigator.userAgent.toLowerCase();
@@ -10,30 +9,18 @@ const isSafari = () => {
 };
 
 export default function VideoPlayer() {
-  const videoParentRef = useRef();
   const [shouldUseImage, setShouldUseImage] = useState(false);
   useEffect(() => {
-    // check if user agent is safari and we have the ref to the container <div />
-    if (isSafari() && videoParentRef.current) {
+    // check if user agent is safari
+    if (isSafari()) {
       setShouldUseImage(true);
     }
   }, []);
 
   return shouldUseImage ? (
-    <img src={gifVideo} style="position: relative;
-    left: 8%;
-    top: 18px;
-    height: 532px;
-    border-radius: 20px;
-    width: auto;
-    z-index: 8;
-    @media (max-width: 1158px) {
-        bottom: 410px;
-    }"
-    alt="Muted Video" />
+    <img src={gifvideo} className = {PhoneScreenStyles.appvideo} alt="Muted Video" />
   ) : (
     <div
-      ref={videoParentRef}
       dangerouslySetInnerHTML={{
         __html: `
         <video
