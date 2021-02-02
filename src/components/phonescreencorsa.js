@@ -1,6 +1,6 @@
 import React from 'react'
 import PhoneScreenStyles from "../styles/phonescreencorsa.module.scss"
-import srcvideo from "../media/screen.png"
+import srcvideo from "../media/corsa.gif"
 
 
 export default function PhoneScreenCorsa(props){
