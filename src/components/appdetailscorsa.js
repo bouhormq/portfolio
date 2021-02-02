@@ -20,7 +20,7 @@ export default function AppDetails(){
                         <img className = {AppDetailsStyles.storenohover} src ={require('../media/googleplaybutton.png')} alt = " "></img>
                     </div>
                     </a>
-                    <a href = 'https://apps.apple.com/us/app/corsa-tetouan/id1549351977' target='_blank' rel="noreferrer">
+                    <a href = 'https://apps.apple.com/us/app/corsa-tetouan/id1549351977#?platform=iphone' target='_blank' rel="noreferrer">
                     <div className = {AppDetailsStyles.store}>
                         <img className = {AppDetailsStyles.storehover} src ={require('../media/appstorebuttonhover.png')} alt = " "></img>
                         <img className = {AppDetailsStyles.storenohover} src ={require('../media/appstorebutton.png')} alt = " "></img>
