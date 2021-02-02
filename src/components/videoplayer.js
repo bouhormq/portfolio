@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from "react";
 import PhoneScreenStyles from "../styles/phonescreencorsa.module.scss"
 import mainVideo from "../media/corsa.mp4"
-import gifvideo from "../media/corsa.gif"
+import gifvideo from "../media/screen.png"
 
 const isSafari = () => {
   const ua = navigator.userAgent.toLowerCase();
