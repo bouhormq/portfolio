@@ -34,7 +34,7 @@ class App extends Component{
             <meta property="og:description" content="Hi there! Check out some of my cool projects!" />
             <meta property="og:image" content="/preview.png" />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://www.bouhormq.com/" />
+            <meta property="og:url" content="https://www.bouhormq.com/corsa" />
             <link rel="canonical" content="https://www.bouhormq.com/" />
             </Helmet>
             {
