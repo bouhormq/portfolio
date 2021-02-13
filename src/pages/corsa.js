@@ -35,10 +35,9 @@ class App extends Component{
               <meta name="keywords" content="portfolio, projects, computer science, upc, salim bouhorma"/>  
               <meta property="og:title" content="Salim Bouhorma Mouffak" />
               <meta property="og:description" content="Hi there! Check out some of my cool projects!" />
-              <meta property="og:image" content="/preview.png" />
+              <meta property="og:image" content="https://www.bouhormq.com/preview.png" />
               <meta property="og:type" content="website" />
-              <meta property="og:url" content="https://www.bouhormq.com/" />
-              <link rel="canonical" content="https://www.bouhormq.com/" />
+              <meta property="og:url" content="https://www.bouhormq.com/corsa" />
             </Helmet>
             {
               this.state.loading ? <RotateScale size = "400px" color="#20356B"/> : 
