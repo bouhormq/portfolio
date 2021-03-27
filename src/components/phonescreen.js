@@ -84,12 +84,12 @@ export default function PhoneScreen(props){
                 <h5 className = {PhoneScreenStyles.type}>Experience</h5>
                 <h2 className = {PhoneScreenStyles.title}>Software Engineer</h2>
                 <h3 className = {PhoneScreenStyles.company}>Polytechnic University of Catalonia</h3>
-                <h4 className = {PhoneScreenStyles.duration}>Feb 2020 – Present · 10 mos</h4>
+                <h4 className = {PhoneScreenStyles.duration}>Feb 2020 – Present · 14 mos</h4>
                 <h4 className = {PhoneScreenStyles.location}>Barcelona, Spain · Internship</h4>
                 <h5 className = {PhoneScreenStyles.type}>Education</h5>
                 <h2 className = {PhoneScreenStyles.title}>Bachelor's degree in Computer Science, Software Engineering</h2>
                 <h3 className = {PhoneScreenStyles.company}>Polytechnic University of Catalonia</h3>
-                <h4 className = {PhoneScreenStyles.duration}>2023 (expected)</h4>
+                <h4 className = {PhoneScreenStyles.duration}>2022 (expected)</h4>
               </div>
             </div>
             <img className = {PhoneScreenStyles.appvideo} ref={videoRef} src =""  alt = ""/>
