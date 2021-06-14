@@ -60,8 +60,8 @@ class App extends Component{
                 <PhoneScreen/>
                 <AppDetailsCorsa/>
                 <PhoneScreen source="corsa"/>
-                <AppDetailsRaco/>
-                <PhoneScreen source="blind"/>
+                //<AppDetailsRaco/>
+                //<PhoneScreen source="blind"/>
                 </section>
               </>
             }
