@@ -3,7 +3,7 @@ import AppDetailsStyles from "../styles/appdetails.module.scss"
 
 export default function AppDetails(){
     return <div className = {AppDetailsStyles.div}>
-                <a href = 'https://www.bouhormq.com/corsa/' target='_blank' rel="noreferrer">
+                <a href = 'https://www.bouhormq.com/corsa/'>
                     <h1 className = {AppDetailsStyles.h1c}>corsa:</h1>
                 </a>
                 <div className = {AppDetailsStyles.text}>
