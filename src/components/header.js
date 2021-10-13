@@ -4,7 +4,7 @@ import HeaderStyles from '../styles/header.module.scss'
 
 export default function Header(){
 return  <div className = {HeaderStyles.menu}>
-            <a href = 'https://www.bouhormq.com/' target='_blank' rel="noreferrer">
+            <a href = 'https://www.bouhormq.com/'>
                         <img className = {HeaderStyles.logo} src ={require('../media/logo.png')} alt = " "></img>
             </a>
             <div className = {HeaderStyles.socials}>
