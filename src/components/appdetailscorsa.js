@@ -3,7 +3,9 @@ import AppDetailsStyles from "../styles/appdetails.module.scss"
 
 export default function AppDetails(){
     return <div className = {AppDetailsStyles.div}>
-                <h1 className = {AppDetailsStyles.h1c}>corsa:</h1>
+                <a href = 'https://www.bouhormq.com/corsa/' target='_blank' rel="noreferrer">
+                    <h1 className = {AppDetailsStyles.h1c}>corsa:</h1>
+                </a>
                 <div className = {AppDetailsStyles.text}>
                     <h2 className = {AppDetailsStyles.h2}>Due to the lack of support</h2>
                     <h2 className = {AppDetailsStyles.h2}>of the public transit</h2>
