@@ -16,6 +16,10 @@ export const Cursor = styled.div`
   pointer-events: none;
   z-index: 1111;
   opacity: 0.75;
+  &:hover .my__unique__button__class-asdf123 {
+    width: 35px;
+    height: 35px;
+  }
   @media (max-width: 414px) {
         display: none;
     }
