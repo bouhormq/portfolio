@@ -16,7 +16,7 @@ export const Cursor = styled.div`
   pointer-events: none;
   z-index: 1111;
   opacity: 0.75;
-  &:hover .my__unique__button__class-asdf123 {
+  &:hover .a {
     width: 35px;
     height: 35px;
   }
