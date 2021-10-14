@@ -16,7 +16,7 @@ export const Cursor = styled.div`
   pointer-events: none;
   z-index: 1111;
   opacity: 0.75;
-  &:hover .a {
+  a:hover{
     width: 55px;
     height: 55px;
   }
