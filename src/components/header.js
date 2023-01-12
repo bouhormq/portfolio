@@ -4,7 +4,7 @@ import HeaderStyles from '../styles/header.module.scss'
 
 export default function Header(){
 return  <div className = {HeaderStyles.menu}>
-            <a href = 'https://www.bouhormq.com/'>
+            <a href = 'https://vibrant-brown-f2f2ee.netlify.app'>
                         <img className = {HeaderStyles.logo} src ={require('../media/logo.png')} alt = " "></img>
             </a>
             <div className = {HeaderStyles.socials}>
